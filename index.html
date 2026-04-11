@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專業五子棋 - 自定義 AI 對戰版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header-row">
+            <h1>五子棋</h1>
+            <div id="status" class="status-box">準備開始</div>
+        </div>
+        
+        <div class="ai-controls">
+            <div class="control-group">
+                <strong>黑棋 (Black):</strong>
+                <select id="blackPlayer">
+                    <option value="human">真人</option>
+                    <option value="ai">AI</option>
+                </select>
+                <select id="blackLevel">
+                    <option value="1">L1 呆萌</option>
+                    <option value="2">L2 初級</option>
+                    <option value="3">L3 中級</option>
+                    <option value="4">L4 高級</option>
+                    <option value="5" selected>L5 無敵</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <strong>白棋 (White):</strong>
+                <select id="whitePlayer">
+                    <option value="human">真人</option>
+                    <option value="ai" selected>AI</option>
+                </select>
+                <select id="whiteLevel">
+                    <option value="1">L1 呆萌</option>
+                    <option value="2">L2 初級</option>
+                    <option value="3">L3 中級</option>
+                    <option value="4">L4 高級</option>
+                    <option value="5" selected>L5 無敵</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas id="chessBoard"></canvas>
+        <button id="resetBtn">重新開始</button>
+    </div>
+
+    <script src="js/logic.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/test.js"></script> 
+    <script src="js/main.js"></script>
+</body>
+</html>
